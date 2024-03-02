@@ -9,9 +9,8 @@ function newGame() {
 
 function sumbit() {
     let inputNum = document.getElementById("numInput").value;
+if(0<=inputNum & inputNum<=10){
     noOfInputs++
-    console.log(num);
-if(inputNum != ""){
 if(noOfInputs<4){
     if(inputNum == num){
         document.getElementById("h3txt").innerHTML = "Great! You Won";
@@ -30,7 +29,7 @@ if(noOfInputs<4){
 
 }
 }else{
-    document.getElementById("h3txt").innerHTML = "Please Enter a number";
+    document.getElementById("h3txt").innerHTML = "Please Enter a valid number";
     document.getElementById("h3txt2").innerHTML = ""; 
 }
 }
