@@ -6,13 +6,11 @@ function newGame() {
     document.getElementById("h3txt").innerHTML = "";
     document.getElementById("h3txt2").innerHTML = "";
     document.getElementById("numInput").value = "";
-    console.log(num);
 }
 
 function sumbit() {
     let inputNum = document.getElementById("numInput").value;
 if(inputNum!=""){
-    console.log(num);
 if(0<=inputNum && inputNum<=10){
     noOfInputs++
 if(noOfInputs<4){
@@ -21,7 +19,6 @@ if(noOfInputs<4){
         document.getElementById("h3txt2").innerHTML = ""; 
     }else{
         document.getElementById("h3txt").innerHTML = "Try Again..";
-        console.log(inputNum);
         if(inputNum>num){
             document.getElementById("h3txt2").innerHTML = "less than "+inputNum; 
         }else if(inputNum<num){
